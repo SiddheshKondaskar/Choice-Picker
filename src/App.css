@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+body {
+  background-color:#d7eef2;
+  font-family: 'Courier New', Courier, monospace ; 
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack items vertically */
+  margin-top: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; /* Center content horizontally */
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container input {
+  font-family: 'Courier New', Courier, monospace ; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 70%; /* Adjust input width */
+  max-width: 300px; /* Limit input width */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-container button {
+  font-family: 'Courier New', Courier, monospace ;
+  font-weight: bold; 
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align X buttons to the left */
+}
+
+.options-list li {
+  display: flex; /* Align X button with text */
+  align-items: c; /* Align items vertically */
+  margin-bottom: 10px;
+}
+
+.options-list li button {
+  font-family: 'Courier New', Courier, monospace ; 
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.random-button {
+  font-family: 'Courier New', Courier, monospace ; 
+  font-weight: bold;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.selected-option {
+  background-color: #ffc107;
+  padding: 10px;
+  border-radius: 5px;
 }
